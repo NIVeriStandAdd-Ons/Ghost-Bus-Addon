@@ -1,0 +1,475 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CustomDevice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Custom Device.xsd">
+	<XSDVersion Major="2010" Minor="0" Fix="0" Build="0" />
+	<AddMenu>
+		<eng>Ghost Bus Addon</eng>
+		<loc>Ghost Bus Addon</loc>
+	</AddMenu>
+	<Version>1.0.0</Version>
+  <Type>Inline HW Interface</Type>
+	<MaxOccurrence>2474</MaxOccurrence>
+	<MainPageGUID>F665F79A-31C5-4337-8154-8A722BDBE03B</MainPageGUID>
+	<InitializationVI>
+		<Type>Action</Type>
+		<Item2Launch>
+			<Type>To Common Doc Dir</Type>
+			<Path>Custom Devices\Ghost Bus Addon\Windows\Ghost Bus Addon Configuration.llb\Initialization VI.vi</Path>
+		</Item2Launch>
+	</InitializationVI>
+	<CustomDeviceVI>
+		<SourceDistribution>
+			<Source>
+				<SupportedTarget>Windows</SupportedTarget>
+				<Source>
+					<Type>To Common Doc Dir</Type>
+					<Path>Custom Devices\Ghost Bus Addon\Windows\Ghost Bus Addon Engine Windows.llb\RT Driver VI.vi</Path>
+				</Source>
+				<RealTimeSystemDestination>c:\ni-rt\VeriStand\Custom Devices\Ghost Bus Addon\Ghost Bus Addon Engine Windows.llb\RT Driver VI.vi</RealTimeSystemDestination>
+			</Source>
+			<Source>
+				<SupportedTarget>Pharlap</SupportedTarget>
+				<Source>
+					<Type>To Common Doc Dir</Type>
+					<Path>Custom Devices\Ghost Bus Addon\Pharlap\Ghost Bus Addon Engine Pharlap.llb\RT Driver VI.vi</Path>
+				</Source>
+				<RealTimeSystemDestination>c:\ni-rt\VeriStand\Custom Devices\Ghost Bus Addon\Ghost Bus Addon Engine Pharlap.llb\RT Driver VI.vi</RealTimeSystemDestination>
+			</Source>
+			<Source>
+				<SupportedTarget>Linux_32_ARM</SupportedTarget>
+				<Source>
+					<Type>To Common Doc Dir</Type>
+					<Path>Custom Devices\Ghost Bus Addon\Linux_32_ARM\Ghost Bus Addon Engine Linux_32_ARM.llb\RT Driver VI.vi</Path>
+				</Source>
+				<RealTimeSystemDestination>c:\ni-rt\VeriStand\Custom Devices\Ghost Bus Addon\Ghost Bus Addon Engine Linux_32_ARM.llb\RT Driver VI.vi</RealTimeSystemDestination>
+			</Source>
+			<Source>
+				<SupportedTarget>Linux_x64</SupportedTarget>
+				<Source>
+					<Type>To Common Doc Dir</Type>
+					<Path>Custom Devices\Ghost Bus Addon\Linux_x64\Ghost Bus Addon Engine Linux64.llb\RT Driver VI.vi</Path>
+				</Source>
+				<RealTimeSystemDestination>c:\ni-rt\VeriStand\Custom Devices\Ghost Bus Addon\Ghost Bus Addon Engine Linux64.llb\RT Driver VI.vi</RealTimeSystemDestination>
+			</Source>
+		</SourceDistribution>
+	</CustomDeviceVI>
+	<Dependencies />
+	<Pages>
+		<Page>
+			<Name>
+				<eng>Ghost Bus Addon</eng>
+				<loc>Ghost Bus Addon</loc>
+			</Name>
+			<GUID>F665F79A-31C5-4337-8154-8A722BDBE03B</GUID>
+			<Glyph>
+				<Type>To Application Data Dir</Type>
+				<Path>System Explorer\Glyphs\NI-XNET Port.png</Path>
+			</Glyph>
+			<Item2Launch>
+				<Type>To Common Doc Dir</Type>
+				<Path>Custom Devices\Ghost Bus Addon\Windows\Ghost Bus Addon Configuration.llb\Main Page.vi</Path>
+			</Item2Launch>
+			<RunTimeMenu>
+				<MenuItem>
+					<GUID>1218380F-BE1C-4E83-9514-8EEA7894205B</GUID>
+					<Type>Action</Type>
+					<Name>
+						<eng>Disable</eng>
+						<loc>Disable</loc>
+					</Name>
+					<Item2Launch>
+						<Type>To Common Doc Dir</Type>
+						<Path>Custom Devices\Ghost Bus Addon\Windows\Ghost Bus Addon Configuration.llb\EnableDisable Main Page.vi</Path>
+					</Item2Launch>
+				</MenuItem>
+				<MenuItem>
+					<GUID>7755077A-1485-13A6-5674A23FB86277FF</GUID>
+					<Type>Separator</Type>
+					<Name>
+						<eng>.</eng>
+						<loc>.</loc>
+					</Name>
+					<Item2Launch>
+						<Type>Absolute</Type>
+						<Path>.</Path>
+					</Item2Launch>
+				</MenuItem>
+				<MenuItem>
+					<GUID>77550670-1485-13A6-568B9AB41979630D</GUID>
+					<Type>Action</Type>
+					<Name>
+						<eng>Delete</eng>
+						<loc>Delete</loc>
+					</Name>
+					<Item2Launch>
+						<Type>Absolute</Type>
+						<Path>Actions\Delete.vi</Path>
+					</Item2Launch>
+				</MenuItem>
+				<MenuItem>
+					<GUID>03D3BE0A-1485-13A6-563AEB9BF271825A</GUID>
+					<Type>VI</Type>
+					<MinNrOfChilds>1</MinNrOfChilds>
+					<Name>
+						<eng>Delete Multiple Items</eng>
+						<loc>Delete Multiple Items</loc>
+					</Name>
+					<Item2Launch>
+						<Type>Absolute</Type>
+						<Path>Dialogs\Delete Multiple Items.vi</Path>
+					</Item2Launch>
+				</MenuItem>
+			</RunTimeMenu>
+      <ActionVIOnDelete>
+        <Type>To Common Doc Dir</Type>
+        <Path>Custom Devices\Ghost Bus Addon\Windows\Ghost Bus Addon Configuration.llb\ActionVIOnDelete.vi</Path>
+      </ActionVIOnDelete>
+      <ActionVIOnLoad>
+        <Type>To Common Doc Dir</Type>
+        <Path>Custom Devices\Ghost Bus Addon\Windows\Ghost Bus Addon Configuration.llb\ActionVIOnLoad.vi</Path>
+      </ActionVIOnLoad>
+      <ActionVIOnCompile>
+        <Type>To Common Doc Dir</Type>
+        <Path>Custom Devices\Ghost Bus Addon\Windows\Ghost Bus Addon Configuration.llb\ActionVIOnCompile.vi</Path>
+      </ActionVIOnCompile>
+		</Page>
+		<Page>
+			<Name>
+				<eng>Ghost Bus Addon</eng>
+				<loc>Ghost Bus Addon</loc>
+			</Name>
+			<GUID>FAA7F77A-E3DD-4739-BD52-E4C14A9D9572</GUID>
+			<Glyph>
+				<Type>To Application Data Dir</Type>
+				<Path>System Explorer\Glyphs\NI-XNET Port Disabled.png</Path>
+			</Glyph>
+			<Item2Launch>
+				<Type>To Common Doc Dir</Type>
+				<Path>Custom Devices\Ghost Bus Addon\Windows\Ghost Bus Addon Configuration.llb\Main Page.vi</Path>
+			</Item2Launch>
+			<RunTimeMenu>
+				<MenuItem>
+					<GUID>1A9111B4-A135-4869-86E6-AA34471DB310</GUID>
+					<Type>Action</Type>
+					<Name>
+						<eng>Enable</eng>
+						<loc>Enable</loc>
+					</Name>
+					<Item2Launch>
+						<Type>To Common Doc Dir</Type>
+						<Path>Custom Devices\Ghost Bus Addon\Windows\Ghost Bus Addon Configuration.llb\EnableDisable Main Page.vi</Path>
+					</Item2Launch>
+				</MenuItem>
+				<MenuItem>
+					<GUID>7755077A-1485-13A6-5674A23FB86277FF</GUID>
+					<Type>Separator</Type>
+					<Name>
+						<eng>.</eng>
+						<loc>.</loc>
+					</Name>
+					<Item2Launch>
+						<Type>Absolute</Type>
+						<Path>.</Path>
+					</Item2Launch>
+				</MenuItem>
+				<MenuItem>
+					<GUID>77550670-1485-13A6-568B9AB41979630D</GUID>
+					<Type>Action</Type>
+					<Name>
+						<eng>Delete</eng>
+						<loc>Delete</loc>
+					</Name>
+					<Item2Launch>
+						<Type>Absolute</Type>
+						<Path>Actions\Delete.vi</Path>
+					</Item2Launch>
+				</MenuItem>
+				<MenuItem>
+					<GUID>03D3BE0A-1485-13A6-563AEB9BF271825A</GUID>
+					<Type>VI</Type>
+					<MinNrOfChilds>1</MinNrOfChilds>
+					<Name>
+						<eng>Delete Multiple Items</eng>
+						<loc>Delete Multiple Items</loc>
+					</Name>
+					<Item2Launch>
+						<Type>Absolute</Type>
+						<Path>Dialogs\Delete Multiple Items.vi</Path>
+					</Item2Launch>
+				</MenuItem>
+			</RunTimeMenu>
+      <ActionVIOnDelete>
+        <Type>To Common Doc Dir</Type>
+        <Path>Custom Devices\Ghost Bus Addon\Windows\Ghost Bus Addon Configuration.llb\ActionVIOnDelete.vi</Path>
+      </ActionVIOnDelete>
+      <ActionVIOnLoad>
+        <Type>To Common Doc Dir</Type>
+        <Path>Custom Devices\Ghost Bus Addon\Windows\Ghost Bus Addon Configuration.llb\ActionVIOnLoad.vi</Path>
+      </ActionVIOnLoad>
+      <ActionVIOnCompile>
+        <Type>To Common Doc Dir</Type>
+        <Path>Custom Devices\Ghost Bus Addon\Windows\Ghost Bus Addon Configuration.llb\ActionVIOnCompile.vi</Path>
+      </ActionVIOnCompile>
+		</Page>
+		<Page>
+			<Name>
+				<eng>Status Channel</eng>
+				<loc>Status Channel</loc>
+			</Name>
+			<DisallowRenaming>true</DisallowRenaming>
+			<DeleteProtection>true</DeleteProtection>
+			<GUID>1C67F462-1B2F-4305-AD9C-25DD02EFA2E8</GUID>
+			<Glyph>
+				<Type>To Application Data Dir</Type>
+				<Path>System Explorer\Glyphs\default fpga channel.png</Path>
+			</Glyph>
+			<Item2Launch>
+				<Type>To Common Doc Dir</Type>
+				<Path>Custom Devices\Ghost Bus Addon\Windows\Ghost Bus Addon Configuration.llb\Protected Channel.vi</Path>
+			</Item2Launch>
+		</Page>
+		<Page>
+			<Name>
+				<eng>Status</eng>
+				<loc>Status</loc>
+			</Name>
+			<DisallowRenaming>true</DisallowRenaming>
+			<DeleteProtection>true</DeleteProtection>
+			<GUID>8E6559CC-D8D1-4FEC-967E-A75255AC33F0</GUID>
+			<Glyph>
+				<Type>To Application Data Dir</Type>
+				<Path>System Explorer\Glyphs\system variable.png</Path>
+			</Glyph>
+			<Item2Launch>
+				<Type>To Common Doc Dir</Type>
+				<Path>Custom Devices\Ghost Bus Addon\Windows\Ghost Bus Addon Configuration.llb\Section Page.vi</Path>
+			</Item2Launch>
+		</Page>
+    <Page>
+			<Name>
+				<eng>Enable Channel</eng>
+				<loc>Enable Channel</loc>
+			</Name>
+			<DisallowRenaming>true</DisallowRenaming>
+			<DeleteProtection>true</DeleteProtection>
+			<GUID>6B6F940E-5E79-447D-84E5-02DD399E6370</GUID>
+			<Glyph>
+				<Type>To Application Data Dir</Type>
+				<Path>System Explorer\Glyphs\default fpga channel.png</Path>
+			</Glyph>
+			<Item2Launch>
+				<Type>To Common Doc Dir</Type>
+				<Path>Custom Devices\Ghost Bus Addon\Windows\Ghost Bus Addon Configuration.llb\Protected Channel.vi</Path>
+			</Item2Launch>
+		</Page>
+		<Page>
+			<Name>
+				<eng>Settings</eng>
+				<loc>Settings</loc>
+			</Name>
+			<DisallowRenaming>true</DisallowRenaming>
+			<DeleteProtection>true</DeleteProtection>
+			<GUID>9EFE9432-3035-4F22-AD7D-DDC55D3B893F</GUID>
+			<Glyph>
+				<Type>To Application Data Dir</Type>
+				<Path>System Explorer\Glyphs\configuration_daq.png</Path>
+			</Glyph>
+			<Item2Launch>
+				<Type>To Common Doc Dir</Type>
+				<Path>Custom Devices\Ghost Bus Addon\Windows\Ghost Bus Addon Configuration.llb\Section Page.vi</Path>
+			</Item2Launch>
+		</Page>
+    <Page>
+      <Name>
+        <eng>To Ghost Bus</eng>
+        <loc>To Ghost Bus</loc>
+      </Name>
+      <DisallowRenaming>true</DisallowRenaming>
+      <DeleteProtection>true</DeleteProtection>
+      <GUID>7467F215-F187-4AC4-A182-357DF27361BD</GUID>
+      <Glyph>
+			<Type>To Application Data Dir</Type>
+			<Path>System Explorer\Glyphs\NI-XNET Incoming.png</Path>
+		</Glyph>
+      <Item2Launch>
+        <Type>To Common Doc Dir</Type>
+		<Path>Custom Devices\Ghost Bus Addon\Windows\Ghost Bus Addon Configuration.llb\Section Page.vi</Path>
+      </Item2Launch>
+	  <RunTimeMenu>
+	  		<MenuItem>
+				<GUID>B506919A-0934-47A6-9079-4D20CD4FF728</GUID>
+				<Type>Action</Type>
+				<Name>
+					<eng>Import Override Frames</eng>
+					<loc>Import Override Frames</loc>
+				</Name>
+				<Item2Launch>
+					<Type>To Common Doc Dir</Type>
+					<Path>Custom Devices\Ghost Bus Addon\Windows\Ghost Bus Addon Configuration.llb\Select XNET Signals.vi</Path>
+				</Item2Launch>
+			</MenuItem>
+       <MenuItem>
+        <GUID>7755077A-1485-13A6-5674A23FB86277FF</GUID>
+        <Type>Separator</Type>
+        <Name>
+          <eng>.</eng>
+          <loc>.</loc>
+        </Name>
+        <Item2Launch>
+          <Type>Absolute</Type>
+          <Path>.</Path>
+        </Item2Launch>
+      </MenuItem>
+      <MenuItem>
+        <GUID>03D3BE0A-1485-13A6-563AEB9BF271825A</GUID>
+        <Type>VI</Type>
+        <MinNrOfChilds>1</MinNrOfChilds>
+        <Name>
+          <eng>Delete Multiple Frames</eng>
+          <loc>Delete Multiple Frames</loc>
+        </Name>
+        <Item2Launch>
+          <Type>Absolute</Type>
+          <Path>Dialogs\Delete Multiple Items.vi</Path>
+        </Item2Launch>
+      </MenuItem>
+		</RunTimeMenu>
+    </Page>
+    <Page>
+      <Name>
+        <eng>To Primary Bus</eng>
+        <loc>To Primary Bus</loc>
+      </Name>
+      <DisallowRenaming>true</DisallowRenaming>
+      <DeleteProtection>true</DeleteProtection>
+      <GUID>F56B78C2-8EF9-4685-942E-B770392E4C5B</GUID>
+      <Glyph>
+			<Type>To Application Data Dir</Type>
+			<Path>System Explorer\Glyphs\NI-XNET Outgoing.png</Path>
+		</Glyph>
+      <Item2Launch>
+        <Type>To Common Doc Dir</Type>
+		<Path>Custom Devices\Ghost Bus Addon\Windows\Ghost Bus Addon Configuration.llb\Section Page.vi</Path>
+      </Item2Launch>
+	  <RunTimeMenu>
+	  		<MenuItem>
+				<GUID>C285B305-4F67-40FC-BFB2-168E051A5F50</GUID>
+				<Type>Action</Type>
+				<Name>
+					<eng>Import Override Frames</eng>
+					<loc>Import Override Frames</loc>
+				</Name>
+				<Item2Launch>
+					<Type>To Common Doc Dir</Type>
+					<Path>Custom Devices\Ghost Bus Addon\Windows\Ghost Bus Addon Configuration.llb\Select XNET Signals.vi</Path>
+				</Item2Launch>
+			</MenuItem>
+      <MenuItem>
+        <GUID>7755077A-1485-13A6-5674A23FB86277FF</GUID>
+        <Type>Separator</Type>
+        <Name>
+          <eng>.</eng>
+          <loc>.</loc>
+        </Name>
+        <Item2Launch>
+          <Type>Absolute</Type>
+          <Path>.</Path>
+        </Item2Launch>
+      </MenuItem>
+      <MenuItem>
+        <GUID>03D3BE0A-1485-13A6-563AEB9BF271825A</GUID>
+        <Type>VI</Type>
+        <MinNrOfChilds>1</MinNrOfChilds>
+        <Name>
+          <eng>Delete Multiple Frames</eng>
+          <loc>Delete Multiple Frames</loc>
+        </Name>
+        <Item2Launch>
+          <Type>Absolute</Type>
+          <Path>Dialogs\Delete Multiple Items.vi</Path>
+        </Item2Launch>
+      </MenuItem>
+		</RunTimeMenu>
+    </Page>
+    <Page>
+      <Name>
+        <eng>Override Frame</eng>
+        <loc>Override Frame</loc>
+      </Name>
+      <DisallowRenaming>true</DisallowRenaming>
+      <ExcludeFromAlphabeticalOrder>true</ExcludeFromAlphabeticalOrder>
+      <GUID>3D195969-2661-40C8-A580-19595CD6B5C5</GUID>
+      <Glyph>
+			<Type>To Application Data Dir</Type>
+			<Path>System Explorer\Glyphs\NI-XNET AFP.png</Path>
+		</Glyph>
+      <Item2Launch>
+        <Type>To Common Doc Dir</Type>
+		<Path>Custom Devices\Ghost Bus Addon\Windows\Ghost Bus Addon Configuration.llb\Frame Page.vi</Path>
+      </Item2Launch>
+      <RunTimeMenu>
+        <MenuItem>
+          <GUID>77550670-1485-13A6-568B9AB41979630D</GUID>
+          <Type>Action</Type>
+          <Name>
+            <eng>Delete</eng>
+            <loc>Delete</loc>
+          </Name>
+          <Item2Launch>
+            <Type>Absolute</Type>
+            <Path>Actions\Delete.vi</Path>
+          </Item2Launch>
+        </MenuItem>
+        <MenuItem>
+          <GUID>03D3BE0A-1485-13A6-563AEB9BF271825A</GUID>
+          <Type>VI</Type>
+          <MinNrOfChilds>1</MinNrOfChilds>
+          <Name>
+            <eng>Delete Multiple Signals</eng>
+            <loc>Delete Multiple Signals</loc>
+          </Name>
+          <Item2Launch>
+            <Type>Absolute</Type>
+            <Path>Dialogs\Delete Multiple Items.vi</Path>
+          </Item2Launch>
+        </MenuItem>
+      </RunTimeMenu>
+    </Page>
+    <Page>
+			<Name>
+				<eng>Data Channel</eng>
+				<loc>Data Channel</loc>
+			</Name>
+			<DisallowRenaming>true</DisallowRenaming>
+			<DeleteProtection>true</DeleteProtection>
+			<GUID>10435930-D9E5-4765-86ED-FFE3B81430E0</GUID>
+			<Glyph>
+				<Type>To Application Data Dir</Type>
+				<Path>System Explorer\Glyphs\default fpga channel.png</Path>
+			</Glyph>
+			<Item2Launch>
+				<Type>To Common Doc Dir</Type>
+				<Path>Custom Devices\Ghost Bus Addon\Windows\Ghost Bus Addon Configuration.llb\Protected Data Channel.vi</Path>
+			</Item2Launch>
+		</Page>
+    <Page>
+			<Name>
+				<eng>Override Channel</eng>
+				<loc>Override Channel</loc>
+			</Name>
+			<DisallowRenaming>true</DisallowRenaming>
+			<DeleteProtection>true</DeleteProtection>
+			<GUID>A0DBE684-75DE-40FF-ABFB-257FA9974665</GUID>
+			<Glyph>
+				<Type>To Application Data Dir</Type>
+				<Path>System Explorer\Glyphs\default fpga channel.png</Path>
+			</Glyph>
+			<Item2Launch>
+				<Type>To Common Doc Dir</Type>
+				<Path>Custom Devices\Ghost Bus Addon\Windows\Ghost Bus Addon Configuration.llb\Protected Override Channel.vi</Path>
+			</Item2Launch>
+		</Page>
+	</Pages>
+	<CustomXML>
+		<Dummy></Dummy>
+	</CustomXML>
+</CustomDevice>
