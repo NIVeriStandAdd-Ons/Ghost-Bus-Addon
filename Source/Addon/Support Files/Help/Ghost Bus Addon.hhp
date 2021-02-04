@@ -1,11 +1,10 @@
 [OPTIONS]
 Compatibility=1.1 or later
-Compiled file=Protection and Counter Addon.chm
-Default topic=HTML Help Source\Main.html
+Compiled File=Ghost Bus Addon.chm
+Default Topic=HTML Help Source\Main.html
 Display compile progress=No
 Language=0x409 English (United States)
-Title=Protection and Counter Addon
-
+Title=Ghost Bus Addon
 
 [FILES]
 HTML Help Source\css\expandable_tree.css
@@ -32,11 +31,9 @@ HTML Help Source\js\stylesheets.js
 HTML Help Source\js\variables.js
 HTML Help Source\js\web.js
 HTML Help Source\Main.html
-HTML Help Source\Status.html
+HTML Help Source\OverrideFrame.html
+HTML Help Source\OverrideFrames.html
 HTML Help Source\Settings.html
+HTML Help Source\Status.html
 HTML Help Source\ToGhostBus.html
 HTML Help Source\ToPrimaryBus.html
-HTML Help Source\OverrideFrame.html
-
-[INFOTYPES]
-

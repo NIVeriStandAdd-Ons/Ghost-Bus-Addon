@@ -258,7 +258,7 @@
 			</Glyph>
 			<Item2Launch>
 				<Type>To Common Doc Dir</Type>
-				<Path>Custom Devices\Ghost Bus Addon\Windows\Ghost Bus Addon Configuration.llb\Protected Channel.vi</Path>
+				<Path>Custom Devices\Ghost Bus Addon\Windows\Ghost Bus Addon Configuration.llb\Protected Override Channel.vi</Path>
 			</Item2Launch>
 		</Page>
 		<Page>
@@ -295,30 +295,6 @@
 		<Path>Custom Devices\Ghost Bus Addon\Windows\Ghost Bus Addon Configuration.llb\Section Page.vi</Path>
       </Item2Launch>
 	  <RunTimeMenu>
-	  		<MenuItem>
-				<GUID>B506919A-0934-47A6-9079-4D20CD4FF728</GUID>
-				<Type>Action</Type>
-				<Name>
-					<eng>Import Override Frames</eng>
-					<loc>Import Override Frames</loc>
-				</Name>
-				<Item2Launch>
-					<Type>To Common Doc Dir</Type>
-					<Path>Custom Devices\Ghost Bus Addon\Windows\Ghost Bus Addon Configuration.llb\Select XNET Signals.vi</Path>
-				</Item2Launch>
-			</MenuItem>
-       <MenuItem>
-        <GUID>7755077A-1485-13A6-5674A23FB86277FF</GUID>
-        <Type>Separator</Type>
-        <Name>
-          <eng>.</eng>
-          <loc>.</loc>
-        </Name>
-        <Item2Launch>
-          <Type>Absolute</Type>
-          <Path>.</Path>
-        </Item2Launch>
-      </MenuItem>
       <MenuItem>
         <GUID>03D3BE0A-1485-13A6-563AEB9BF271825A</GUID>
         <Type>VI</Type>
@@ -345,6 +321,38 @@
       <Glyph>
 			<Type>To Application Data Dir</Type>
 			<Path>System Explorer\Glyphs\NI-XNET Outgoing.png</Path>
+		</Glyph>
+      <Item2Launch>
+        <Type>To Common Doc Dir</Type>
+		<Path>Custom Devices\Ghost Bus Addon\Windows\Ghost Bus Addon Configuration.llb\Section Page.vi</Path>
+      </Item2Launch>
+	  <RunTimeMenu>
+      <MenuItem>
+        <GUID>03D3BE0A-1485-13A6-563AEB9BF271825A</GUID>
+        <Type>VI</Type>
+        <MinNrOfChilds>1</MinNrOfChilds>
+        <Name>
+          <eng>Delete Multiple Frames</eng>
+          <loc>Delete Multiple Frames</loc>
+        </Name>
+        <Item2Launch>
+          <Type>Absolute</Type>
+          <Path>Dialogs\Delete Multiple Items.vi</Path>
+        </Item2Launch>
+      </MenuItem>
+		</RunTimeMenu>
+    </Page>
+    <Page>
+      <Name>
+        <eng>Override Frames</eng>
+        <loc>Override Frames</loc>
+      </Name>
+      <DisallowRenaming>true</DisallowRenaming>
+      <DeleteProtection>true</DeleteProtection>
+      <GUID>6DBD21E7-9AC1-4A33-BA91-2620717C270E</GUID>
+      <Glyph>
+			<Type>To Application Data Dir</Type>
+			<Path>System Explorer\Glyphs\xnet frame.png</Path>
 		</Glyph>
       <Item2Launch>
         <Type>To Common Doc Dir</Type>
@@ -417,19 +425,6 @@
           <Item2Launch>
             <Type>Absolute</Type>
             <Path>Actions\Delete.vi</Path>
-          </Item2Launch>
-        </MenuItem>
-        <MenuItem>
-          <GUID>03D3BE0A-1485-13A6-563AEB9BF271825A</GUID>
-          <Type>VI</Type>
-          <MinNrOfChilds>1</MinNrOfChilds>
-          <Name>
-            <eng>Delete Multiple Signals</eng>
-            <loc>Delete Multiple Signals</loc>
-          </Name>
-          <Item2Launch>
-            <Type>Absolute</Type>
-            <Path>Dialogs\Delete Multiple Items.vi</Path>
           </Item2Launch>
         </MenuItem>
       </RunTimeMenu>
