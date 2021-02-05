@@ -1438,7 +1438,7 @@
 				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Utilities/Copy .LLB to NI VeriStand dir.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{8308DA76-4737-4EBE-A109-BC088D885439}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/Linux_x64/Ghost Bus Addon Engine Linux64.llb</Property>
-				<Property Name="Bld_version.build" Type="Int">31</Property>
+				<Property Name="Bld_version.build" Type="Int">32</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
 				<Property Name="Destination[0].path" Type="Path">/Linux_x64/Ghost Bus Addon Engine Linux64.llb</Property>
