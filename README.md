@@ -3,21 +3,15 @@ Ghost-Bus-Addon
 
 ### Description ###
 
-The Ghost Bus Addon allows the user to easily select data channels for calculating a CRC or checksum.  It creates and maps rolling counters and CRC/checksum channels to selected outgoing signals.
+The Ghost Bus Addon allows the user pass CAN messages to/from a secondary (ghost) bus to a primary bus.
 
 ### Help ###
-
-Quick Start Documentation is at
-
-Built: C:\Users\Public\Documents\National Instruments\NI VeriStand (Year)\Custom Devices\Protection and Counter Addon\Windows\Quick Start Documentation
-
-Source: Source\Addon\Support Files\Quick Start Documentation
 
 Help is also included in most System Explorer sections.
 
 ### Built Availability ###
 
-https://github.com/NIVeriStandAdd-Ons/CAN-Frame-Protection-Custom-Device/releases
+https://github.com/NIVeriStandAdd-Ons/Ghost-Bus-Addon/releases
 
 ### Built Dependencies ###
 
@@ -28,8 +22,6 @@ Network Streams 19.0 or later
 ### Quality, Limitations ###
 
 IP has been tested by developer. It meets VeriStand addon coding best practices. It is not currently widely used. 
-
-This addon does not have all CRC/Checksum options implemented.
 
 ### Source Version ###
 
@@ -45,9 +37,11 @@ NI Simple Messaging Library 3.1.0.9 (https://www.vipm.io/package/ni_lib_stm/)
 
 NI Asynchronous Messaging Communication Library 3.3.1.22 (https://www.vipm.io/package/ni_lib_amc/)
 
+OpenG Array Library 4.1.1.14 (https://www.vipm.io/package/oglib_array/)
+
 SubModules:
 
-Frame Protection Support (https://github.com/NIVeriStandAdd-Ons/Frame-Protection-Support)
+CAN Streaming Support (https://github.com/NIVeriStandAdd-Ons/CAN-Streaming-Support)
 
 ### License ###
 
