@@ -42,6 +42,7 @@
 		<Item Name="Async Main.vi" Type="VI" URL="../SubVIs/Async Main.vi"/>
 		<Item Name="Bitfile.Download.vi" Type="VI" URL="../SubVIs/Bitfile.Download.vi"/>
 		<Item Name="Bitfile.Initialize.vi" Type="VI" URL="../SubVIs/Bitfile.Initialize.vi"/>
+		<Item Name="Bitfile.Unload.vi" Type="VI" URL="../SubVIs/Bitfile.Unload.vi"/>
 		<Item Name="Format Debug String.vi" Type="VI" URL="../SubVIs/Format Debug String.vi"/>
 		<Item Name="Initialize Bus Settings.vi" Type="VI" URL="../SubVIs/Initialize Bus Settings.vi"/>
 		<Item Name="Initialize RT Main.vi" Type="VI" URL="../SubVIs/Initialize RT Main.vi"/>
